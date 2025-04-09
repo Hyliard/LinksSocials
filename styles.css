@@ -11,14 +11,13 @@
     box-sizing: border-box;
 }
 
-:root {
-    --transition: all 0.3s ease-in-out; /* Cambia el tiempo y el tipo según lo necesites */
-}
 
 a {
     color: var(--primary-color);
     text-decoration: none;
 }
+
+
 
 /* Estilo global del body */
 
@@ -126,8 +125,7 @@ header {
     padding: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
-    /* No necesitas align-items aquí porque no es un flex container */
-    margin: 0 auto; /* Esto ayuda en algunos casos como respaldo */
+    margin: 0 auto;
     
 }
 
@@ -188,6 +186,11 @@ header {
     font-size: 20px;
 }
 
+#profile-img {
+    border: 2px solid red !important; /* Para ver el espacio reservado */
+    background-color: #eee; /* Fondo visible si no carga */
+}
+
 .instagram { color: #e1306c; }
 .youtube { color: #ff0000; }
 .tiktok { color: #000000; }
@@ -198,45 +201,17 @@ header {
 .linkedin { color: #0077b5; }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Estilo para el pie de página */
+
 footer {
     background: var(--bg-color);
-    color: white; /* Texto blanco */
-    text-align: center; /* Centrado de texto */
-    padding: 20px 0; /* Espaciado superior e inferior */
+    color: white; 
+    text-align: center; 
+    padding: 20px 0; 
     position: relative;
     bottom: 0;
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    transition: background-color var(--transition); /* Usa la variable */
+    width: 100%; 
+    transition: background-color var(--transition); 
 }
 .container-footer {
     text-align: center;
@@ -257,29 +232,29 @@ footer {
 
 .logo-footer {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente si es necesario */
-    padding: 20px; /* Añade algo de espacio alrededor del logo */
-    background-color: var(--bg-color); /* Color de fondo opcional */
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    background-color: var(--bg-color); 
 }
 
 footer .logo-footer img {
-    max-width: 150px; /* Tamaño máximo para el logo */
-    margin-bottom: 10px; /* Espaciado debajo del logo */
+    max-width: 150px; 
+    margin-bottom: 10px; 
 }
 
 /* Estilo para los enlaces de redes sociales */
 .redes-footer {
-    margin: 15px 0; /* Espaciado superior e inferior */
+    margin: 15px 0; 
     display: flex;
     justify-content: center;    
 }
 
 .redes-footer a {
-    color: white; /* Color blanco para los iconos */
-    margin: 0 10px; /* Espaciado entre los iconos */
-    font-size: 24px; /* Tamaño de los iconos */
-    text-decoration: none; /* Quitar subrayado */
+    color: white;
+    margin: 0 10px; 
+    font-size: 24px; 
+    text-decoration: none; 
 }
 /* Este separa las redes y las hace grande   */
 .redes-footer .icon-redes {
@@ -293,7 +268,7 @@ footer .logo-footer img {
     align-items: center;
     border-radius: 100%;
     color: #a2a2a2;
-    transition: background-color var(--transition); /* Usa la variable */
+    transition: background-color var(--transition); 
 }
 /* Este es para cuando pasas por el icono de cada uno   */
 footer .redes-footer .fa-linkedin-in:hover {
@@ -314,26 +289,26 @@ footer .redes-footer .fa-twitch:hover {
 /* Estilo para el separador horizontal */
 footer hr {
     border: 0;
-    border-top: 1px solid #34495e; /* Línea gris */
-    margin: 20px auto; /* Espaciado y centrado */
-    width: 80%; /* Ancho de la línea */
+    border-top: 1px solid #34495e; 
+    margin: 20px auto; 
+    width: 80%; 
 }
 
 /* Estilo para el texto debajo del separador */
 footer p {
-    font-size: 14px; /* Tamaño de fuente más pequeño */
+    font-size: 14px; 
     margin: 5px 0;
 }
 
 footer h4 {
-    font-size: 16px; /* Tamaño de fuente para el nombre */
+    font-size: 16px; 
     margin: 0;
     text-align: center;
     color: #a2a2a2;
     margin-top: 20px;
 }
 footer p {
-    font-size: 14px; /* Tamaño de fuente para el nombre */
+    font-size: 14px; 
     margin: 0;
     text-align: center;
     color: #a2a2a2;
@@ -343,7 +318,7 @@ footer p {
 /* Estilo para pantallas más pequeñas (responsivo) */
 @media (max-width: 768px) {
     .navbar {
-        display: none; /* Ocultar los enlaces en pantallas pequeñas */
+        display: none; 
     }
 
 

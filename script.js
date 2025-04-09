@@ -2,6 +2,7 @@ const toggleTheme = document.getElementById("toggle-theme");
 const toggleIcon = document.getElementById("toggle-icon");
 const toggleText = document.getElementById("toggle-text");
 
+
 // Cambia el tema al hacer clic en el botón
 toggleTheme.addEventListener("click", () => {
     document.body.classList.toggle("dark");
@@ -15,12 +16,12 @@ toggleTheme.addEventListener("click", () => {
 });
 
 
+
 // Datos personalizables (modifica estos valores)
 const profileData = {
     name: "Luis Gerardo Martinez Hernandez",
     description: "¡Sígueme en mis redes!",
-    imageUrl: "assets/image/profile.jpg",
-    backgroundUrl: "assets/image/background.jpg",
+    imageUrl: "assets/image/perfil2.jpg",
 };
 
 const links = [
@@ -29,9 +30,9 @@ const links = [
     { name: "TikTok", url: "https://tiktok.com", icon: "fab fa-tiktok", class: "tiktok" },
     { name: "WhatsApp", url: "https://wa.me/tunumero", icon: "fab fa-whatsapp", class: "whatsapp" },
     { name: "Facebook", url: "https://facebook.com", icon: "fab fa-facebook", class: "facebook" },
-    { name: "Twitter", url: "https://twitter.com", icon: "fab fa-twitter", class: "twitter" },
+    { name: "X", url: "https://x.com/DJLuisGMartinez", icon: "fab fa-", class: "X" },
     { name: "Spotify", url: "https://spotify.com", icon: "fab fa-spotify", class: "spotify" },
-    { name: "LinkedIn", url: "https://linkedin.com", icon: "fab fa-linkedin", class: "linkedin" },
+    { name: "LinkedIn", url: "https://linkedin.comhttps://www.linkedin.com/in/luis-gerardo-martinez-03898582/", icon: "fab fa-linkedin", class: "linkedin" },
 ];
 
 // Cargar datos en la página
@@ -51,3 +52,4 @@ document.addEventListener('DOMContentLoaded', () => {
         linksContainer.appendChild(linkElement);
     });
 });
+
